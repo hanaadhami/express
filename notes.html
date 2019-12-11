@@ -40,25 +40,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-
-    $("#save").on("click", function(event) {
-        event.preventDefault();
-    
-        var newNotes = {
-            noteTitle: $("#note-title").val().trim(),
-            noteText: $("#note-text").val().trim()
-        };
-
-        console.log(newNotes);
-
-        $.post("/api/notes", newNotes, function(data){
-            $("#note-title").val("");
-            $("#note-text").val("");
-        });
-    
-    });
-    
-    
-    </script>
