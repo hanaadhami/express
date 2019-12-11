@@ -8,6 +8,7 @@ const store = new Store({file: "db.json"});
 // =============================================================
 var app = express();
 var PORT = 8000;
+var PORT = process.env.PORT || 8000;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
