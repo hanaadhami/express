@@ -7,10 +7,13 @@ var notes = require("../data/notes");
       });
       app.post("/api/notes", function(req, res) {
         notes.push(req.body);
-      }
+      });
+
+    };
+
       //app.post('/notes', notes.create);
       //app.get('/notes', notes.findAll);
       //app.get('/notes/:noteId', notes.findOne);
       //app.delete('/notes/:noteId', notes.delete);
-  }
+  
   
